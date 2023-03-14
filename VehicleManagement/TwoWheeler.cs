@@ -27,6 +27,7 @@ namespace VehicleManagement
         public TwoWheeler()
         {
             Id = 1;
+            Name = "Access";
             NoOfHelmet = 2;
             WheelsCount = 3;
             HeadLightCount = 4;
@@ -34,7 +35,7 @@ namespace VehicleManagement
             ExhaustCount = 6;
             NoOfHelmet = 7;
             FuelTankSize = "5 Liters";
-            
+           
         }
         public TwoWheeler(int id, string name, int wheelscount, int headLightcount, int indicatorCount, int exhaustCount, int noOfHelmet, string fuelTankSize)
         {
@@ -46,7 +47,7 @@ namespace VehicleManagement
             NoOfHelmet = noOfHelmet;
             IndicatorCount = indicatorCount;
             FuelTankSize = fuelTankSize;
-           
+         
         }
         //Method for starting 2 wheelers
         public void StartEngine()
@@ -66,6 +67,13 @@ namespace VehicleManagement
         public void StopDriving()
         {
             Console.WriteLine("Stop Driving  two wheeler");
+        }
+        public void PrintAllDetails()
+        {
+            Console.WriteLine("\n Id: {0} \n Name: {1} \n WheelsCount: {2} \n HeadLightCount: {3} " +
+                "\n ExhaustCount: {4} \n NoOfHelmet: {5} \n IndicatorCount: {6} \n FuelTankSize: {7} \n"
+                , Id, Name, WheelsCount, HeadLightCount, ExhaustCount, NoOfHelmet,IndicatorCount,FuelTankSize);
+
         }
     }
 }

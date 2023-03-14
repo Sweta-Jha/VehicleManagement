@@ -81,5 +81,12 @@ namespace VehicleManagement
         {
             Console.WriteLine("Engage the brake for four wheeler");
         }
+        public void PrintAllDetails()
+        {
+            Console.WriteLine("\n Id: {0} \n Name: {1} \n WheelsCount: {2} \n HeadLightCount: {3} " +
+                "\n ExhaustCount: {4}  \n IndicatorCount: {5} \n FuelTankSize: {6} \n SpeakerCount: {7} \n WindowCount: {8} " +
+                "\n SeatBeltCount: {9} \n FuelType: {10} \n SeatingCapacity: {11} \n"
+                , Id, Name, WheelsCount, HeadLightCount, ExhaustCount, IndicatorCount, FuelTankSize, SpeakerCount,WindowCount, SeatBeltCount, FuelType.Petrol, SeatingCapacity);
+        }
     }
 }
